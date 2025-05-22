@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virginia Fonseca</title>
-    <link rel="stylesheet" href="./css.css">
-    <link rel="icon"
-        href="https://th.bing.com/th/id/OIF.xGsKq2F3oJ5zYACXzX5MmA?w=307&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Virginia Fonseca</title>
+        <link rel="stylesheet" href="./css.css">
+        <link rel="icon"
+            href="https://th.bing.com/th/id/OIF.xGsKq2F3oJ5zYACXzX5MmA?w=307&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+    </head>
 
-<body>
-    <div class="virg">
-        <H1>Virginia Fonseca</H1>
-    </div>
-    <div class="fotoDaDiva">
-        <img src="https://imgs.search.brave.com/XDALrAOhQBFb8oIqehJzg9r4PGBOw6jvGMmOq6EqOu8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vWk9DTHky/NEsxWDMzeDdNemMt/dmFwRlRqU3Zkb2c5/amVuazI2Qy1SM2Jm/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9aR05wTG1O/dmJTNWljaTkzL2ND/MWpiMjUwWlc1MEwz/VncvYkc5aFpITXZN/akF5TVM4dy9OaTh4/TkMweE1pMHhNREF3/L2VEVTRNQzVxY0dj.jpeg">
-        <div>
-            <h3>Sobre a Diva</h3>
+    <body>
+        <div class="virg">
+            <h1>Virginia Fonseca</h1>
         </div>
-        <div>
-            <p>Ela é a maior influencer bafonica</p>
-        </div>
+        <div class="fotoDaDiva">
+            <img
+                src="https://imgs.search.brave.com/qfIZZHsb_kMlDeA4dPq9bvO4GQJTje2qBH5zyE4PT2w/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vcHJFb3RS/ZWIwbG5pVXZMNUtJ/akRJTEVTc2p2R3Nn/TURRQmVFSkRKMExP/Zy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlw/TG5CcC9ibWx0Wnk1/amIyMHZiM0pwL1oy/bHVZV3h6TDJRd0wy/VTQvTHpRd0wyUXda/VGcwTURnMy9ObU0y/TkRrM1ltSXpPVGhs/L1pqTmlOVFk1TldF/MU56UmsvTG1wd1p3.jpeg"
+                alt>
+            <div>
+                <h3>Sobre a Diva</h3>
+            </div>
+            <div>
+                <p>Ela é a maior influencer bafonica</p>
+            </div>
 
-        <div>
-            <h2> CPI das BETS</h2>
-            <p>No dia 13 de maio nossa diva compareceu para depor na CPI das Bets, e com isso rendeu muitas fotos da
-                nossa diva divando, com a blusa da maria flor e um lindo oculos</p>
+            <div>
+                <h2> CPI das BETS</h2>
+                <p>No dia 13 de maio nossa diva compareceu para depor na CPI das
+                    Bets, e com isso rendeu muitas fotos da
+                    nossa diva divando, com a blusa da maria flor e um lindo
+                    oculos</p>
 
-            <div class="cpiImg">
-                <img src="https://th.bing.com/th/id/OIF.ajQNz537c8zDkmbZUcvPoA?rs=1&pid=ImgDetMain">
+                <div class="cpiImg">
+                    <img
+                        src="https://th.bing.com/th/id/OIF.ajQNz537c8zDkmbZUcvPoA?rs=1&pid=ImgDetMain">
+                </div>
+            </div>
+
+            <h1>A familia da DIVA</h1>
+
+            <div class="family">
+                <div class="tmn_img"><img src="./img/baixados.jpg"></div>
+                <div class="tmn_img"><img src="./img/OIP (1).jpg"></div>
+                <div class="tmn_img"><img src="./img/OIP.jpg"> </div>
             </div>
         </div>
 
-        <h1>A familia da DIVA</h1>
-
-        <div class="family">
-            <div class="tmn_img"><img src="./img/baixados.jpg"></div>
-            <div class="tmn_img"><img src="./img/OIP (1).jpg"></div>
-            <div class="tmn_img"><img src="./img/OIP.jpg"> </div>
+        <div class="clica">
+            <a href="./clica.html">Clique aqui</a>
         </div>
-    </div>
 
-    <div class="clica">
-        <a href="./clica.html">Clique aqui</a>
-    </div>
+        <div class="botaoDaMaria">
+            <h2>Qual o tamanho do seu quadrado? Alique no botão abaixo</h2>
+            <button onclick="mpk()">
+                Quadrado
+            </button>
+        </div>
 
+        <script>
+            function mpk(){
 
-</html>
+                let altura = prompt("qual o tamanho da altura do seu quadrado?")
+                let largura = prompt("qual a largura do quadrado?")
+
+                let quadrado = altura * largura
+
+                alert(`A area do seu quadrado é: ${quadrado}`)
+            }
+        </script>
+
+    </html>
